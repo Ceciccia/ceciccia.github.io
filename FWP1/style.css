@@ -1,0 +1,177 @@
+body {
+    margin: auto;
+    background-color: #f1f1f1;
+}
+
+h3 {
+    font-variant-caps: small-caps;
+}
+
+header {
+    background-image: url("Pic/Prop5.jpg");
+    height: 650px;
+    background-size: cover;
+    background-position-x: 77%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    float: left;
+    width: 20%;
+    height: 200px;
+    background-color: #f1f1f1;
+    border-top: 3px double;
+    border-bottom: 3px double;
+    box-sizing: border-box;
+}
+
+.navbarhome {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.homeelement, .lifestyleelement, .artelement, .forumelement {
+    font-size: 26px;
+    font-variant-caps: small-caps;
+    display: grid;
+    color: #000;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.homeelement a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.lifestyleelement a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.artelement a:hover {
+    background-color:#4CAF50;
+    color: white;
+}
+.forumelement a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.description {
+    background-color: #f1f1f1;
+    width: 80%;
+    height: 200px;
+    float: right;
+    text-align: center;    
+    font-size: 18px;
+    font-variant-caps: small-caps;
+    border-top: 3px double;
+    border-bottom: 3px double;
+    overflow: auto;
+    box-sizing: border-box;
+    border-left: 3px double;
+
+}
+
+a:link {
+    color: black;
+}
+
+.credits {
+    text-align: center;
+}
+
+.end {
+    text-align: center;
+    background-color: #ededed;;
+    padding: 3px;
+}
+
+.contacts {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.contacts i {
+    padding: 10px;
+    text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 150ms;
+}
+.contacts a:nth-child(1) {
+    color: #3b5998;
+}
+.contacts a:nth-child(2) {
+    color: #c32aa3;
+}
+.contacts a:nth-child(3) {
+    color: #0088cc;
+}
+.contacts a:nth-child(4) {
+    color: #1da1f2;
+}
+.contacts a:nth-child(5) {
+    color: #ea4335;
+}
+
+.contacts i:hover {
+    margin-top: -3px;
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
+
+.carouselelement {
+    float: left;
+    width: 31.33%;
+    height: 540px;
+    text-align: center;
+    padding: 1%;
+}
+
+.carouselelement:hover {
+    background-color:#4CAF50;
+    color: white;
+}
+
+.photocarousel:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 30px;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free";
+    font-size: 30px;
+}
+
+hr {
+    width: 80%;
+}
+
+.discover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .carouselelement {
+        width: 100%;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .description {
+        width: 100%;
+        border-left: none;
+    }
+} 
